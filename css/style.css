@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* header section style */
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+    
+   
+  
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+  
+}
+.nav-logo{
+    color #131313);
+    
+    font-family: Work Sans;
+ 
+    
+    font-weight: 400;
+    
+}
+.na-loging-ber ul{
+   display: flex;
+   align-items: center;
+   
+}
+.na-loging-ber li{
+    list-style: none;
+    margin-left: 30px;
+    
+}
+/* banner style */
+.banner-container{
+    justify-content: center;
+    margin-top: 102px;
+    align-items: center;
+    
+    
+}
+.banner-title{
+    
+    justify-content: center;
+    width: 700px;
+    margin: 0 auto;
+}
+.banner-title h1{
+    color:  #131313);
+text-align: center;
+
+font-size: 64px;
+
+font-weight: 700;
+
+}
+.banner-driscption{
+    color:#727272;
+text-align: center;
+font-family: Work Sans;
+font-size: 16px;
+
+font-weight: 400;
+line-height: 26px;
+}
+.btn-prymary{
+    color: #FFF;
+    width: 180px;
+    height: 64px;
+text-align: center;
+font-family: Work Sans;
+font-size: 1.5rem;
+border-radius: 8px;
+background: #FF900E;
+margin-bottom: 50px;
+font-weight: 600;
+margin-top: 33px;
+cursor: pointer;
+margin-left: 240px;
+justify-content: center;
+}
+/* smail devicee */
+@media screen and (max-width:576px) {
+    nav,
+    .na-loging-ber ul{
+        flex-direction: column;
+    }
+    .nav-logo h1{
+        margin-left: 94px;
+        margin-bottom: 30px;
+      
+    }
+    .btn-prymary{
+        margin-left: 80px;
+    }
+    .na-loging-ber ul>li{
+        margin-bottom: 20px;
+
+    }
+    header,
+    .banner-container {
+  padding: 10px;
+  margin: 0 2px;
+    }
+   .banner-title {
+    max-width: fit-content;
+   }
+   .banner-img img{
+ max-width: 100%;
+   }
+}
+/* medium device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    nav,
+    .na-loging-ber ul{
+        flex-direction: column;
+    }
+    .banner-img img{
+        max-width: 100%;
+          }
+          .banner-title{
+            width: 457px;
+          }
+          .nav-logo h1{
+            margin-left: 176px;
+            margin-bottom: 30px;
+          
+        }
+        .btn-prymary{
+            margin-left: 80px;
+        }
+        .na-loging-ber ul>li{
+            margin-bottom: 20px;
+    
+        }
+}
