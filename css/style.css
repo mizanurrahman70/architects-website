@@ -43,6 +43,13 @@ nav {
     margin-bottom: 100px;
 }
 
+.nav-logo {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+
+}
+
 .nav-list ul {
     display: flex;
     list-style: none;
@@ -51,6 +58,12 @@ nav {
 
 .nav-list ul li {
     margin-right: 50px;
+   color:  #424242;
+
+font-size: 1rem;
+
+font-weight: 500;
+line-height: 1.6rem;
 }
 
 .nav-list ul a {
@@ -73,7 +86,42 @@ nav {
     font-weight: 700;
 
 }
-.banner-img img{
+
+.banner-img img {
     margin-top: 50px;
     margin-bottom: 45px;
+}
+
+/* Mobile device for responsive */
+@media screen and (max-width:576px) {
+    nav,
+    .nav-list ul{
+        flex-direction: column;
+    }
+    header {
+        padding: 10px;
+    }
+    .banner-img img {
+        max-width: 100%;
+    }
+    .banner{
+        max-width: 100%;
+    }
+}
+
+/* tablet device for responsive */
+@media screen and (min-width:576px) and (max-width:926px) {
+    nav,
+    .nav-list ul{
+        flex-direction: column;
+    }
+    header {
+        padding: 10px;
+    }
+    .banner-img img {
+        max-width: 100%;
+    }
+    .banner{
+        max-width: 100%;
+    }
 }
