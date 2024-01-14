@@ -133,7 +133,7 @@ nav {
 
 /* <!-- /Features section style --> */
 .Features-section {
-    margin: 0 240px 180px 260px;
+    margin: 0 240px 0 290px;
 }
 
 .Features-container {
@@ -171,17 +171,19 @@ nav {
 }
 
 .little-heading h1 {
-   padding: 30px 0px 10px 33px;
+    padding: 30px 0px 10px 33px;
     color: #131313;
     font-size: 1.2rem;
 
     font-weight: 600;
 
 }
-.little-heading p{
-    padding:0px 0px 30px 30px ;
+
+.little-heading p {
+    padding: 0px 0px 30px 30px;
 }
-.exp{
+
+.exp {
     width: 298px;
     height: 181px;
     border-radius: 8px;
@@ -193,24 +195,75 @@ nav {
     left: -50px;
 }
 
-.little-exp{
+.little-exp {
     padding: 45px 30px;
 
 }
-.little-exp h1{
+
+.little-exp h1 {
     color: #FFF;
-text-align: center;
-font-size: 4rem;
-font-weight: 700;
-line-height: 4.2rem; 
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.2rem;
 }
 
 
-.little-exp p{
+.little-exp p {
     color: #FFF;
-font-size: 1.4rem;
-font-weight: 500;
-line-height: 2.6rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+
+}
+
+/* Some Facts section style */
+.Some-Facts {
+    margin: 0 290.8px;
+    margin-bottom: 100px;
+   
+}
+
+.some-fact-title h1 {
+    color: #131313;
+
+    font-size: 3rem;
+
+    font-weight: 700;
+}
+
+.Some-Facts-title p {
+    width: 542px;
+}
+
+.some-face-icon {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+   
+
+
+}
+
+.containt-icon {
+    width: 241.831px;
+    height: 241.831px;
+
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    align-items: center;
+    padding: 70px 90px;
+}
+.containt-icon h1{
+color:#424242;
+font-size: 2rem;
+font-weight: 600;
+}
+.containt-icon p{
+    color: #727272;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
 
 }
 
@@ -219,6 +272,7 @@ line-height: 2.6rem;
 @media screen and (max-width:576px) {
 
     nav,
+    .some-face-icon,
     .Features-container,
     .group-container,
     .nav-list ul {
@@ -242,18 +296,30 @@ line-height: 2.6rem;
     }
 
     .group-descertion,
+    .Some-Facts,
     .Features-section {
         margin: 3px 2px 3px 2px;
     }
+
     .Features-p,
     .little-heading,
-    .Features-photo img{
+    .Features-photo img
+     {
         max-width: 100%;
         min-height: 100%;
-    } 
-    .exp{
-       max-width: 50%;
-       max-height: 50%;
+    }
+
+    .exp {
+        max-width: 50%;
+        max-height: 50%;
+    }
+    .containt-icon{
+        width: 100%;
+        height: 100%;
+    }
+    .some-fact-title{
+        height: 100%;
+        width: 100%;
     }
 }
 
@@ -262,8 +328,7 @@ line-height: 2.6rem;
 
     nav,
     .group-container,
-    .Features-container
-     {
+    .Features-container {
         flex-direction: column;
     }
 
@@ -287,14 +352,26 @@ line-height: 2.6rem;
         margin-left: 70;
 
     }
+
     .Features-section {
         margin: 10px 3px;
     }
-    .exp{
+
+    .exp {
         margin-left: 50px;
     }
-    .Features-p, .little-heading{
+
+    .Features-p,
+    .little-heading {
         width: auto;
         height: auto;
+    }
+    .some-face-icon{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .Some-Facts{
+        margin-top: 0;
     }
 }
